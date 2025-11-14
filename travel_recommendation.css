@@ -47,7 +47,30 @@ h3{
 }
 
 .search-bar{
+    margin-right: 5px;
     padding: 18px 5px 5px 20px;
     vertical-align: middle;
     float: right;    
+}
+
+.button{
+    font-size: 20px;
+    border-radius: 60px;
+    padding: 18px 5px 5px 20px;
+    height: 0px;
+}
+
+.btn{
+    background-color: darkcyan;
+    border: 2px solid lightblue;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.btn:hover{
+    background-color: darkcyan;
+    border: 2px solid lightblue;
+    color: whitesmoke;
+    border-radius: 30px;
+    padding: 10px;
 }
