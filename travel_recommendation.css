@@ -1,0 +1,40 @@
+boby{
+    margin: 1px;
+    padding: 1px;
+}
+
+section#nav-bar{
+    background-color: black;
+    padding: 2px;
+}
+
+.top-nav {
+    display: flex;
+    color: white;
+    overflow: hidden;
+}
+
+.companyName{
+    margin-left: 20px;
+}
+
+.topMiddle{
+    margin: 10px;
+    float: right;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.topMiddle a:hover{
+    text-shadow: 1px;
+    font-weight: bolder;
+    text-decoration: underline;
+    background-color: darkgreen;
+}
+
+.topMiddle a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
