@@ -1,40 +1,53 @@
 boby{
-    margin: 1px;
-    padding: 1px;
+    margin: 0px;
+    padding: 0px;
 }
 
 section#nav-bar{
     background-color: black;
     padding: 2px;
+    vertical-align: middle;
 }
 
-.top-nav {
+.top-nav{
     display: flex;
     color: white;
-    overflow: hidden;
 }
 
-.companyName{
-    margin-left: 20px;
+.travelBloom {
+    margin-left: 30px;
+    padding: 10px 20px 5px 20px;
 }
 
-.topMiddle{
-    margin: 10px;
-    float: right;
-    padding: 20px;
+h3{
+    margin-bottom: auto;
+    margin-top: auto;
+    font-size: 30px;
+}
+
+.topLinks{
+    display: flex;
+    margin-left: 15%;
+    padding: 12px 10px 10px 10px;
     font-size: 20px;
 }
 
-.topMiddle a:hover{
+.top-nav a:hover{
     text-shadow: 1px;
     font-weight: bolder;
     text-decoration: underline;
     background-color: darkgreen;
 }
 
-.topMiddle a{
+.top-nav a{
     text-decoration: none;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px 10px 5px 10px;
+}
+
+.search-bar{
+    padding: 18px 5px 5px 20px;
+    vertical-align: middle;
+    float: right;    
 }
