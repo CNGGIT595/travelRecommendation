@@ -1,4 +1,8 @@
-boby{
+* {
+    box-sizing: border-box;
+}
+
+body{
     margin: 0px;
     padding: 0px;
 }
@@ -74,3 +78,54 @@ h3{
     border-radius: 30px;
     padding: 10px;
 }
+
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.column.left {
+    width: 10%;
+    align-content: flex-end;
+  }
+
+.column.right {
+    width: 90%;
+    align-content: space-around;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-text {
+    font-size: 10px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+     color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    color: white;
+  }
