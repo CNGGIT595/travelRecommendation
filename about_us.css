@@ -97,20 +97,9 @@ h3{
     align-content: flex-end;
   }
 
-.column.middle{
-    width: 30%;
-    color: white;
-    align-content: flex-end;
-}
-
 .column.right {
     width: 90%;
     align-content: space-around;
-}
-
-.column.right2 {
-    width: 60%;
-    align-content: stretch;
 }
   
 .row:after {
@@ -154,3 +143,15 @@ h3{
 .fa-youtube {
     color: white;
 }
+
+.inner-column{
+    float: left;
+    color: white;
+    padding: 10px;
+}
+
+.inner-column.col {
+    width: 25%;
+    color: white;
+    align-content: flex-end;
+  }

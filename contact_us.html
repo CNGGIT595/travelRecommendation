@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>TravelBloom - Travel Recommendations</title>
+    <title>TravelBloom - Contact Us</title>
     <link rel="stylesheet" type="text/css" href="./travel_recommendation.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./travel_recommendation.js"></script>
@@ -17,15 +17,8 @@
             <div class="topLinks">        
                 <a href="./travel_recommendation.html" class="topHome">Home </a>
                 <a href="./about_us.html" class="topAboutUs">About Us </a>
-                <a href="./contact_us.html" class="topContactUs">Contact Us </a>                        
+                <a href="./contact_us.html" class="topContactUs">Contact Us </a>                      
             </div>            
-            <div class="search-bar">
-                <input type="text" id="searchInput" placeholder="Enter a destination or keyword">
-            </div>
-            <div class="button">
-                <a class="btn" href="#"> Search </a>
-                <a class="btn" href="#"> Clear </a>
-            </div>
         </div>
     </section>
     </nav>
@@ -39,23 +32,21 @@
                 <p><a href="#" class="fa fa-youtube"></a></p>
             </div>       
             <div class="column middle">
-                <h1>EXPLORE</h1>
-                <h1>DREAM</h1>
-                <h1>DESTINATION</h1>    
+                <h1>CONTACT US</h1> 
                 <div class="main-text">
-                    <p>It encourages exploration of unfamiliar</p>
-                    <p>territories, embracing diverse cultures and</p>
-                    <p>landscapes, while pursuing the desired</p>
-                    <p>destination that captivates the heart and</p>
-                    <p>ignites a sense of wonder.</p>
+                    <p>Get in touch</p>
                 </div>
-                <div class="button">
-                    <a class="btn"> BOOK NOW </a>
-                </div>
-            </div>
+            </div>   
             <div class="column right2">
-                <div id="result"></div>
-            </div>
+                <label for="inputName">Name</label><br>
+                <input type="text" id="inputName" placeholder="Enter your name"><br><br>
+                <label for="inputEmail">Email</label><br>
+                <input type="text" id="inputEmail" placeholder="Enter your email"><br><br>
+                <label for="inputTextarea">Message</label><br>
+                <textarea id="inputTextarea" rows="8" placeholder="Enter your message"></textarea>
+                <br><br>
+                <input type="submit" class="btn" value="Submit">
+            </div>            
         </div>
     </section>
 </body>
