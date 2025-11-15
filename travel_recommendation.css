@@ -5,6 +5,10 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-image: url('./beach-bgr.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 section#nav-bar{
@@ -81,12 +85,14 @@ h3{
 
 .column {
     float: left;
+    color: white;
     padding: 10px;
     height: 300px; /* Should be removed. Only for demonstration */
 }
 
 .column.left {
     width: 10%;
+    color: white;
     align-content: flex-end;
   }
 
@@ -116,16 +122,24 @@ h3{
   /* Add a hover effect if you want */
   .fa:hover {
     opacity: 0.7;
-  }
+}
   
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
+.fa-facebook {
      color: white;
-  }
+}
   
-  /* Twitter */
-  .fa-twitter {
+.fa-twitter {
     color: white;
-  }
+}
+
+.fa-flickr {
+    color: white;
+}
+
+.fa-feed {
+    color: white;
+}
+
+.fa-youtube {
+    color: white;
+}
