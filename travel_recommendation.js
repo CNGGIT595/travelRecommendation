@@ -32,7 +32,7 @@ function searchRecommendation() {
                     }    
                     break;
                 case "count":
-                    const imageUrls = [] , cityNames = [] , cityDescriptions [];
+                    const imageUrls = [] , cityNames = [] , cityDescriptions = [];
 
                     for (const country of data.countries){
                         for (const city of country.cities) {
@@ -42,7 +42,7 @@ function searchRecommendation() {
                         }
                     }
                     for (i=0;i<cityNames.length;i++){
-                        resultDiv.innerHTML += `<p><img src="${imageu[i]}" width=280px height=180px alt="city ${i}"><p>`;
+                        resultDiv.innerHTML += `<p><img src="${imageUrls[i]}" width=280px height=180px alt="city ${i}"><p>`;
                         resultDiv.innerHTML += `<p><strong>${cityNames[i]}</strong><p>`;
                         resultDiv.innerHTML += `<p>${cityDescriptions[i]}<p>`;
                         resultDiv.innerHTML += `<p><button id='btnVisit' class="btn" > Visit </button><p>`;
