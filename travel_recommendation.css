@@ -19,26 +19,13 @@ section#nav-bar{
 }
 
 .top-nav{
-    display: flex;
+    display: inline;
     color: white;
 }
 
-.travelBloom {
-    margin-left: 30px;
-    padding: 10px 20px 5px 20px;
-}
-
-h3{
-    margin-bottom: auto;
-    margin-top: auto;
-    font-size: 30px;
-}
-
-.topLinks{
-    display: flex;
-    margin-left: 15%;
-    padding: 12px 10px 10px 10px;
-    font-size: 20px;
+.topHome{
+    padding: 10px 10px 10px 30px;
+    margin-left: 200px;
 }
 
 .top-nav a:hover{
@@ -53,13 +40,6 @@ h3{
     color: white;
     text-align: center;
     padding: 5px 10px 5px 10px;
-}
-
-.search-bar{
-    margin-right: 5px;
-    padding: 18px 5px 5px 20px;
-    vertical-align: middle;
-    float: right;    
 }
 
 .button{
