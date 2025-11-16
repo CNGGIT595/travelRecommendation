@@ -4,31 +4,51 @@ function searchRecommendation() {
     const input = document.getElementById('searchInput').value.toLowerCase();
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = '';
-    let beaches;
+    let beaches, temples, countries;
     let inputSubstr = input.substring(0,5);
     console.log(inputSubstr);
 
     if (input.length >= 5) {   
-
         fetch('travel_recommendation_api.json')
         .then(response => response.json())
         .then(data => {
-
             switch (inputSubstr) {
                 case "beach":
                     for (i=1;i<3;i++){
                         beaches = data.beaches.find(item => item.id === i);
-                        resultDiv.innerHTML += `<img src="${beaches.imageUrl}" alt="beaches 1">`;
-                    }
-                    
+                        resultDiv.innerHTML += `<p><img src="${beaches.imageUrl}" width=280px height=180px alt="beaches ${i}"><p>`;
+                        resultDiv.innerHTML += `<p><strong>${beaches.name}</strong><p>`;
+                        resultDiv.innerHTML += `<p>${beaches.description}<p>`;
+                        resultDiv.innerHTML += `<p><button id='btnVisit' class="btn" > Visit </button><p>`;
+                    }                    
                     break;
                 case "templ":
-                    resultDiv.innerHTML += `<img src="${data.temples[0].imageUrl} alt="temple 1">`;
+                    for (i=1;i<3;i++){
+                        temples = data.temples.find(item => item.id === i);
+                        resultDiv.innerHTML += `<p><img src="${temples.imageUrl}" width=280px height=180px alt="beaches ${i}"><p>`;
+                        resultDiv.innerHTML += `<p><strong>${temples.name}</strong><p>`;
+                        resultDiv.innerHTML += `<p>${temples.description}<p>`;
+                        resultDiv.innerHTML += `<p><button id='btnVisit' class="btn" > Visit </button><p>`;
+                    }    
                     break;
                 case "count":
+                    const imageUrls = [] , cityNames = [] , cityDescriptions [];
+
+                    for (const country of data.countries){
+                        for (const city of country.cities) {
+                            imageUrls.push(city.imageUrl);
+                            cityNames.push(city.name);
+                            cityDescriptions.push(city.description);
+                        }
+                    }
+                    for (i=0;i<cityNames.length;i++){
+                        resultDiv.innerHTML += `<p><img src="${imageu[i]}" width=280px height=180px alt="city ${i}"><p>`;
+                        resultDiv.innerHTML += `<p><strong>${cityNames[i]}</strong><p>`;
+                        resultDiv.innerHTML += `<p>${cityDescriptions[i]}<p>`;
+                        resultDiv.innerHTML += `<p><button id='btnVisit' class="btn" > Visit </button><p>`;
+                    }    
                     break;
                 default:
-
                     alert("${input.substring(0,4)} Please enter beach, temple, or country into the Search Box")
             }
         console.log(data.temples);
