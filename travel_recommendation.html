@@ -4,8 +4,7 @@
     <meta charset="utf-8" />
     <title>TravelBloom - Travel Recommendations</title>
     <link rel="stylesheet" type="text/css" href="./travel_recommendation.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="./travel_recommendation.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
 </head>
 <body>    
     <nav>        
@@ -18,13 +17,13 @@
                 <a href="./travel_recommendation.html" class="topHome">Home </a>
                 <a href="./about_us.html" class="topAboutUs">About Us </a>
                 <a href="./contact_us.html" class="topContactUs">Contact Us </a>                        
-            </div>            
-            <div class="search-bar">
-                <input type="text" id="searchInput" placeholder="Enter a destination or keyword">
-            </div>
-            <div class="button">
-                <a class="btn" href="#"> Search </a>
-                <a class="btn" href="#"> Clear </a>
+<!--             </div>            
+            <div class="search-bar">  -->
+                <input type="text" id="searchInput" size="30" placeholder="Enter a destination or keyword">
+<!--            </div>
+            <div class="button">  -->
+                <button id='btnSearch' class="btn" > Search </button>
+                <button id='btnClear' class="btn" > Clear </button>
             </div>
         </div>
     </section>
@@ -58,5 +57,6 @@
             </div>
         </div>
     </section>
+    <script src="./travel_recommendation.js"></script>
 </body>
 </html>
