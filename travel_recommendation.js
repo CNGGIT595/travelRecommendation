@@ -1,8 +1,10 @@
+const searchInput = document.getElementById('searchInput');
 const btnSearch = document.getElementById('btnSearch');
+const btnClear = document.getElementById('btnClear');
+const resultDiv = document.getElementById('result');
 
 function searchRecommendation() {
     const input = document.getElementById('searchInput').value.toLowerCase();
-    const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = '';
     let beaches, temples, countries;
     let inputSubstr = input.substring(0,5);
@@ -62,4 +64,9 @@ function searchRecommendation() {
         alert("Please enter beach, temple, or country into the Search Box")
     }
 }
+function clearResult() {
+    resultDiv.innerHTML = '';
+    searchInput.value = '';
+}
 btnSearch.addEventListener('click', searchRecommendation);
+btnClear.addEventListener('click', clearResult);
