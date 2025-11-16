@@ -8,7 +8,6 @@ function searchRecommendation() {
     resultDiv.innerHTML = '';
     let beaches, temples, countries;
     let inputSubstr = input.substring(0,5);
-    console.log(inputSubstr);
 
     if (input.length >= 5) {   
         fetch('travel_recommendation_api.json')
@@ -53,8 +52,6 @@ function searchRecommendation() {
                 default:
                     alert("${input.substring(0,4)} Please enter beach, temple, or country into the Search Box")
             }
-        console.log(data.temples);
-
         })
         .catch(error => {
                 console.error('Error:', error);

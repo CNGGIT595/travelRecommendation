@@ -100,7 +100,7 @@ section#nav-bar{
 }
 
 .main-text {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .fa {
@@ -145,4 +145,5 @@ section#nav-bar{
     width: 25%;
     color: white;
     align-content: flex-end;
+    font-size: 10px;
 }
